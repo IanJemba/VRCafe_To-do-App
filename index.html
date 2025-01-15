@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRCafe To-Do App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <img src="img/logo.png" alt="VRCafe Logo" class="logo">
+        <h1><span style="color: black;">
+                VRCafe</span> To-Do App</h1>
+    </header>
+    <main>
+        <section class="task-input">
+            <input type="text" id="task-input" placeholder="Add a new task..." />
+            <select id="category-select">
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="leisure">Leisure</option>
+            </select>
+            <button id="add-task-btn">Add Task</button>
+        </section>
+        <section class="task-list">
+            <div id="work-tasks" class="task-category">
+                <h2>Work</h2>
+                <ul></ul>
+            </div>
+            <div id="personal-tasks" class="task-category">
+                <h2>Personal</h2>
+                <ul></ul>
+            </div>
+            <div id="leisure-tasks" class="task-category">
+                <h2>Leisure</h2>
+                <ul></ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 VRCafe Haarlem</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
